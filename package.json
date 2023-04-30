@@ -1,0 +1,28 @@
+{
+  "name": "linter-python",
+  "linter-package": true,
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Linting Python files using multiple linters",
+  "activationEvents": [],
+  "homepage": "https://github.com/bacadra/atom-linter-python",
+  "url": "https://github.com/bacadra/atom-linter-python",
+  "repository": "https://github.com/bacadra/atom-linter-python",
+  "license": "MIT",
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "activationHooks": [
+    "language-python:grammar-used",
+    "MagicPython:grammar-used",
+    "django-atom:grammar-used",
+    "atom-django:grammar-used"
+  ],  
+  "dependencies": {
+    "tmp": "^0.2.1"
+  }
+}

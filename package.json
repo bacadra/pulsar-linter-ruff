@@ -1,13 +1,13 @@
 {
-  "name": "linter-python",
+  "name": "linter-ruff",
   "linter-package": true,
   "main": "./lib/main",
   "version": "0.0.0",
-  "description": "Linting Python files using multiple linters",
+  "description": "Linting Python files using ruff",
   "activationEvents": [],
-  "homepage": "https://github.com/bacadra/atom-linter-python",
-  "url": "https://github.com/bacadra/atom-linter-python",
-  "repository": "https://github.com/bacadra/atom-linter-python",
+  "homepage": "https://github.com/bacadra/atom-linter-ruff",
+  "url": "https://github.com/bacadra/atom-linter-ruff",
+  "repository": "https://github.com/bacadra/atom-linter-ruff",
   "license": "MIT",
   "providedServices": {
     "linter": {
@@ -21,7 +21,7 @@
     "MagicPython:grammar-used",
     "django-atom:grammar-used",
     "atom-django:grammar-used"
-  ],  
+  ],
   "dependencies": {
     "tmp": "^0.2.1"
   }

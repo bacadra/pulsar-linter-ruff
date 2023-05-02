@@ -2,7 +2,7 @@
   "name": "linter-ruff",
   "linter-package": true,
   "main": "./lib/main",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Linting Python files using ruff",
   "activationEvents": [],
   "homepage": "https://github.com/bacadra/atom-linter-ruff",

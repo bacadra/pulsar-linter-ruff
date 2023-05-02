@@ -8,7 +8,12 @@
   "homepage": "https://github.com/bacadra/atom-linter-ruff",
   "url": "https://github.com/bacadra/atom-linter-ruff",
   "repository": "https://github.com/bacadra/atom-linter-ruff",
-  "license": "MIT",
+  "keywords": [
+    "bacadra",
+    "linter",
+    "python",
+    "ruff"
+  ],
   "providedServices": {
     "linter": {
       "versions": {

@@ -24,7 +24,7 @@ For command line use, pylint is installed with:
 
 Ruff supports over 500 lint [rules](https://beta.ruff.rs/docs/rules/), many of which are inspired by popular tools like Flake8, isort, pyupgrade, and others. Regardless of the rule's origin, Ruff re-implements every rule in Rust as a first-party feature.
 
-Package config settings `select`, `ignore`, `fixable` and `unfixable` are send to ruff executable. The `skipped` is used by package internally.
+Package config settings `Rule selection: ...` are send to ruff executable and `Class selection: ...` are use internally by package.
 
 # Contributing
 

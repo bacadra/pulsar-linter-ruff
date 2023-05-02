@@ -8,29 +8,41 @@ The official [Atom packages store](https://atom.io/packages) has been disabled. 
 
     apm install bacadra/atom-linter-ruff
 
-and obtain the package directly from Github repository.
-
-The package has compability with [Pulsar](https://pulsar-edit.dev/) and can be install
+and obtain the package directly from Github repository. The package has compability with [Pulsar](https://pulsar-edit.dev/) and can be install
 
     pulsar -p install bacadra/atom-linter-ruff
 
+or directly [linter-ruff](https://web.pulsar-edit.dev/packages/linter-ruff) from Pulsar package store.
+
 ## ruff
 
-A package [ruff](https://github.com/charliermarsh/ruff) is an extremely fast Python linter, written in Rust. Ruff can be used to replace Flake8 (plus dozens of plugins), isort, pydocstyle, yesqa, eradicate, pyupgrade, and autoflake, all while executing tens or hundreds of times faster than any individual tool.
+A package ruff is an extremely fast Python linter, written in Rust. Ruff can be used to replace Flake8 (plus dozens of plugins), isort, pydocstyle, yesqa, eradicate, pyupgrade, and autoflake, all while executing tens or hundreds of times faster than any individual tool.
 
-For command line use, pylint is installed with:
+For command line use, ruff is installed with:
 
     pip install ruff
 
 Ruff supports over 500 lint [rules](https://beta.ruff.rs/docs/rules/), many of which are inspired by popular tools like Flake8, isort, pyupgrade, and others. Regardless of the rule's origin, Ruff re-implements every rule in Rust as a first-party feature.
 
-Package config settings `Rule selection: ...` are send to ruff executable and `Class selection: ...` are use internally by package.
+Ruff can attempt to automatically fix lint violations. List of rule codes to treat as eligible & ineligible can be set in package setting or in configuration file.
+
+## Commands
+
+The following commands are available:
+
+* `linter-ruff:toggle-noqa`: toggle package setting of noqa's used,
+* `linter-ruff:lint`: run lint of file. Please note. if you have installed [linter](https://github.com/steelbrain/linter) package, then linter will be run automatically,
+* `linter-ruff:fix`: run fix violations.
+
+## Settings
+
+The linter settings can be set by package options or via configuration file. The package options has higher priority, so if you want use configuration file, then leave empty `Rule selection` items. The details of configuration file (e.g. commands, file discovery) can be found at ruff [docs](https://beta.ruff.rs/docs/configuration/).
 
 # Contributing
 
 If you have ideas on how to improve the package, see bugs or want to support new features - feel free to share it via GitHub.
 
-See my other packages for Atom Editor:
+See my other packages for Atom Editor & Pulsar Editor:
 
 * [autocomplete-sofistik](https://github.com/bacadra/atom-autocomplete-sofistik)
 * [bib-finder](https://github.com/bacadra/atom-bib-finder)

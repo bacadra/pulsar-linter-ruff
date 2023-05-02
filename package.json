@@ -12,7 +12,16 @@
     "bacadra",
     "linter",
     "python",
-    "ruff"
+    "ruff",
+    "pyflakes",
+    "pycodestyle",
+    "mccabe",
+    "isort",
+    "pep8",
+    "pyupgrade",
+    "flake8",
+    "pylint",
+    "numpy"
   ],
   "providedServices": {
     "linter": {

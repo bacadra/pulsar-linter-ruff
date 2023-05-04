@@ -1,5 +1,10 @@
 # linter-ruff
 
+![Tag](https://img.shields.io/github/v/tag/bacadra/atom-linter-ruff?style=for-the-badge)
+![LastCommit](https://img.shields.io/github/last-commit/bacadra/atom-linter-ruff?style=for-the-badge)
+![RepoSize](https://img.shields.io/github/repo-size/bacadra/atom-linter-ruff?style=for-the-badge)
+![Licence](https://img.shields.io/github/license/bacadra/atom-linter-ruff?style=for-the-badge)
+
 The package is wrapper around Python linter called [ruff](https://github.com/charliermarsh/ruff). Package used [linter](https://github.com/steelbrain/linter) top-level API to visualize errors and other types of messages with ease.
 
 ## Installation

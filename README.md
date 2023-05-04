@@ -4,11 +4,17 @@ The package is wrapper around Python linter called [ruff](https://github.com/cha
 
 ## Installation
 
-The official [Atom packages store](https://atom.io/packages) has been disabled. To get latest version run the shell command
+### Atom Text Editor
+
+The official Atom packages store has been disabled. To get latest version run the shell command
 
     apm install bacadra/atom-linter-ruff
 
-and obtain the package directly from Github repository. The package has compability with [Pulsar](https://pulsar-edit.dev/) and can be install
+and obtain the package directly from Github repository.
+
+### Pulsar Text Editor
+
+The package has compability with [Pulsar](https://pulsar-edit.dev/) and can be install
 
     pulsar -p install bacadra/atom-linter-ruff
 
@@ -30,9 +36,9 @@ Ruff can attempt to automatically fix lint violations. List of rule codes to tre
 
 The following commands are available:
 
-* `linter-ruff:toggle-noqa`: toggle package setting of noqa's used,
-* `linter-ruff:lint`: run lint of file. Please note. if you have installed [linter](https://github.com/steelbrain/linter) package, then linter will be run automatically,
-* `linter-ruff:fix`: run fix violations.
+* `linter:lint`: a command of [linter](https://github.com/steelbrain/linter) package,
+* `linter-ruff:fix`: run fix violations,
+* `linter-ruff:toggle-noqa`: toggle package setting of noqa's used.
 
 ## Settings
 
@@ -42,15 +48,15 @@ The linter settings can be set by package options or via configuration file. The
 
 If you have ideas on how to improve the package, see bugs or want to support new features - feel free to share it via GitHub.
 
-See my other packages for Atom Editor & Pulsar Editor:
+See my other packages for Atom & Pulsar Text Editors:
 
 * [autocomplete-sofistik](https://github.com/bacadra/atom-autocomplete-sofistik)
 * [bib-finder](https://github.com/bacadra/atom-bib-finder)
 * [hydrogen-run](https://github.com/bacadra/atom-hydrogen-run)
 * [image-paste](https://github.com/bacadra/atom-image-paste)
 * [language-sofistik](https://github.com/bacadra/atom-language-sofistik)
-* [language-sofistik](https://github.com/bacadra/atom-language-sofistik)
 * [linter-ruff](https://github.com/bacadra/atom-linter-ruff)
+* [navigation-panel](https://github.com/bacadra/atom-navigation-panel)
 * [open-external](https://github.com/bacadra/atom-open-external)
 * [pdf-viewer](https://github.com/bacadra/atom-pdf-viewer)
 * [project-files](https://github.com/bacadra/atom-project-files)

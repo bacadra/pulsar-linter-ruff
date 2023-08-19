@@ -5,9 +5,9 @@
   "version": "0.0.6",
   "description": "Linting Python files using ruff",
   "activationEvents": [],
-  "homepage": "https://github.com/bacadra/atom-linter-ruff",
-  "url": "https://github.com/bacadra/atom-linter-ruff",
-  "repository": "https://github.com/bacadra/atom-linter-ruff",
+  "homepage": "https://github.com/bacadra/pulsar-linter-ruff",
+  "url": "https://github.com/bacadra/pulsar-linter-ruff",
+  "repository": "https://github.com/bacadra/pulsar-linter-ruff",
   "keywords": [
     "bacadra",
     "linter",
@@ -23,6 +23,9 @@
     "pylint",
     "numpy"
   ],
+  "engines": {
+    "atom": ">=1.100.0 <2.0.0"
+  },  
   "providedServices": {
     "linter": {
       "versions": {

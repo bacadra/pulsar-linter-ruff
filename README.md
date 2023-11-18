@@ -21,7 +21,7 @@ The package is wrapper around Python linter called [ruff](https://github.com/cha
 
 To install `linter-ruff` search for [linter-ruff](https://web.pulsar-edit.dev/packages/linter-ruff) in the Install pane of the Pulsar settings or run `ppm install linter-ruff`.
 
-Alternatively, run `ppm install bacadra/pulsar-linter-ruff` to install a package directly from Github repository.
+Alternatively, you can run `ppm install bacadra/pulsar-linter-ruff` to install a package directly from the Github repository.
 
 ## ruff
 

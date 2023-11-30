@@ -15,7 +15,7 @@
   </a>
 </p>
 
-The package is wrapper around Python linter called [ruff](https://github.com/charliermarsh/ruff). Package used [linter](https://github.com/steelbrain/linter) top-level API to visualize errors and other types of messages with ease.
+The package is wrapper around Python linter called [ruff](https://github.com/astral-sh/ruff). Package used [linter](https://github.com/steelbrain/linter) top-level API to visualize errors and other types of messages with ease.
 
 ## Installation
 
@@ -27,11 +27,9 @@ Alternatively, you can run `ppm install bacadra/pulsar-linter-ruff` to install a
 
 A package ruff is an extremely fast Python linter, written in Rust. Ruff can be used to replace Flake8 (plus dozens of plugins), isort, pydocstyle, yesqa, eradicate, pyupgrade, and autoflake, all while executing tens or hundreds of times faster than any individual tool.
 
-For command line use, ruff is installed with:
+For command line use, ruff is installed with `pip install ruff`.
 
-    pip install ruff
-
-Ruff supports over 500 lint [rules](https://beta.ruff.rs/docs/rules/), many of which are inspired by popular tools like Flake8, isort, pyupgrade, and others. Regardless of the rule's origin, Ruff re-implements every rule in Rust as a first-party feature.
+Ruff supports over 500 lint [rules](https://docs.astral.sh/ruff/rules/), many of which are inspired by popular tools like Flake8, isort, pyupgrade, and others. Regardless of the rule's origin, Ruff re-implements every rule in Rust as a first-party feature.
 
 Ruff can attempt to automatically fix lint violations. List of rule codes to treat as eligible & ineligible can be set in package setting or in configuration file.
 
@@ -41,11 +39,16 @@ The following commands are available:
 
 * `linter:lint`: a command of [linter](https://github.com/steelbrain/linter) package,
 * `linter-ruff:fix`: run fix violations,
-* `linter-ruff:toggle-noqa`: toggle package setting of noqa's used.
+* `linter-ruff:toggle-noqa`: toggle package setting of noqa's used,
+* `linter-ruff:open-default-config`: open ruff default config file.
 
 ## Settings
 
-The linter settings can be set by package options or via configuration file. The package options has higher priority, so if you want use configuration file, then leave empty `Rule selection` items. The details of configuration file (e.g. commands, file discovery) can be found at ruff [docs](https://beta.ruff.rs/docs/configuration/).
+The linter settings can be set by package options or via configuration file. The package options has higher priority, so if you want use configuration file, then leave empty `Rule selection` items.
+
+A default configuration `pyproject.toml` can be opened (and created if doesn't exists) by command `linter-ruff:open-default-config`.
+
+The details of configuration file (e.g. commands, file discovery) can be found at ruff [config discovery](https://docs.astral.sh/ruff/configuration/#config-file-discovery).
 
 # Contributing [🍺](https://www.buymeacoffee.com/asiloisad)
 

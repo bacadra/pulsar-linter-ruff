@@ -1,20 +1,5 @@
 # linter-ruff
 
-<p align="center">
-  <a href="https://github.com/bacadra/pulsar-linter-ruff/tags">
-  <img src="https://img.shields.io/github/v/tag/bacadra/pulsar-linter-ruff?style=for-the-badge&label=Latest&color=blue" alt="Latest">
-  </a>
-  <a href="https://github.com/bacadra/pulsar-linter-ruff/issues">
-  <img src="https://img.shields.io/github/issues-raw/bacadra/pulsar-linter-ruff?style=for-the-badge&color=blue" alt="OpenIssues">
-  </a>
-  <a href="https://github.com/bacadra/pulsar-linter-ruff/blob/master/package.json">
-  <img src="https://img.shields.io/github/languages/top/bacadra/pulsar-linter-ruff?style=for-the-badge&color=blue" alt="Language">
-  </a>
-  <a href="https://github.com/bacadra/pulsar-linter-ruff/blob/master/LICENSE">
-  <img src="https://img.shields.io/github/license/bacadra/pulsar-linter-ruff?style=for-the-badge&color=blue" alt="Licence">
-  </a>
-</p>
-
 The package is wrapper around Python linter called [ruff](https://github.com/astral-sh/ruff). Package used [linter](https://github.com/steelbrain/linter) top-level API to visualize errors and other types of messages with ease.
 
 ## Installation
@@ -35,10 +20,10 @@ Ruff can attempt to automatically fix lint violations. List of rule codes to tre
 
 The following commands are available:
 
-* `linter:lint`: a command of [linter](https://github.com/steelbrain/linter) package,
-* `linter-ruff:fix`: run fix violations,
-* `linter-ruff:toggle-noqa`: toggle package setting of noqa's used,
-* `linter-ruff:open-default-config`: open ruff default config file.
+- `linter:lint`: a command of [linter](https://github.com/steelbrain/linter) package,
+- `linter-ruff:fix`: run fix violations,
+- `linter-ruff:toggle-noqa`: toggle package setting of noqa's used,
+- `linter-ruff:open-default-config`: open ruff default config file.
 
 ## Settings
 
@@ -48,6 +33,6 @@ A default configuration `pyproject.toml` can be opened (and created if doesn't e
 
 The details of configuration file (e.g. commands, file discovery) can be found at ruff [config discovery](https://docs.astral.sh/ruff/configuration/#config-file-discovery).
 
-# Contributing [🍺](https://www.buymeacoffee.com/asiloisad)
+# Contributing
 
 If you have any ideas on how to improve the package, spot any bugs, or would like to support the development of new features, please feel free to share them via GitHub.

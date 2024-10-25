@@ -1,6 +1,6 @@
 # linter-ruff
 
-The package is wrapper around Python linter called [ruff](https://github.com/astral-sh/ruff). Package used [linter](https://github.com/steelbrain/linter) top-level API to visualize errors and other types of messages with ease.
+A wrapper around Python linter called [ruff](https://github.com/astral-sh/ruff). Package used [linter](https://github.com/steelbrain/linter) top-level API to visualize errors and other types of messages with ease.
 
 ## Installation
 
@@ -20,19 +20,19 @@ Ruff can attempt to automatically fix lint violations. List of rule codes to tre
 
 The following commands are available:
 
-- `linter:lint`: a command of [linter](https://github.com/steelbrain/linter) package,
-- `linter-ruff:fix`: run fix violations,
-- `linter-ruff:toggle-noqa`: toggle package setting of noqa's used,
-- `linter-ruff:open-default-config`: open ruff default config file.
+- `linter:lint`: manually run a linting (function of [linter](https://github.com/steelbrain/linter) package)
+- `linter-ruff:fix`: attempt to fix violations by ruff
+- `linter-ruff:toggle-noqa`: toggle package setting of noqa's used
+- `linter-ruff:global-pyproject`: open ruff default config file
 
 ## Settings
 
 The linter settings can be set by package options or via configuration file. The package options has higher priority, so if you want use configuration file, then leave empty `Rule selection` items.
 
-A default configuration `pyproject.toml` can be opened (and created if doesn't exists) by command `linter-ruff:open-default-config`.
+A default configuration `pyproject.toml` can be opened (and created if doesn't exists) by command `linter-ruff:global-pyproject`.
 
 The details of configuration file (e.g. commands, file discovery) can be found at ruff [config discovery](https://docs.astral.sh/ruff/configuration/#config-file-discovery).
 
 # Contributing
 
-If you have any ideas on how to improve the package, spot any bugs, or would like to support the development of new features, please feel free to share them via GitHub.
+Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub — any feedback’s welcome!

@@ -3,7 +3,7 @@
   "linter-package": true,
   "main": "./lib/main",
   "version": "1.0.0",
-  "description": "Linting Python files using ruff",
+  "description": "A wrapper around Python linter called ruff",
   "activationEvents": [],
   "homepage": "https://github.com/bacadra/pulsar-linter-ruff",
   "url": "https://github.com/bacadra/pulsar-linter-ruff",

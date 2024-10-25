@@ -18,7 +18,7 @@ Ruff can attempt to automatically fix lint violations. List of rule codes to tre
 
 ## Commands
 
-The following commands are available:
+In `atom-workspace` there are available commands:
 
 - `linter:lint`: manually run a linting (function of [linter](https://github.com/steelbrain/linter) package)
 - `linter-ruff:fix`: attempt to fix violations by ruff

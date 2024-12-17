@@ -27,7 +27,12 @@ In `atom-workspace` there are available commands:
 In `atom-text-editor:not([mini])` there are available commands:
 
 - `linter:lint`: run a linter manually (ref. [linter](https://github.com/steelbrain/linter))
-- `linter-ruff:fix`: attempt to fix violations by ruff
+
+In `atom-text-editor[data-grammar="source python"]:not([mini])` there are available commands:
+
+- `linter-ruff:fix`: attempt to fix violations
+- `linter-ruff:format-editor`: format text of current text-editor
+- `linter-ruff:format-selected`: format selections of current text-editor
 
 ## Settings
 

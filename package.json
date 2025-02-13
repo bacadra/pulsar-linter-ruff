@@ -1,15 +1,8 @@
 {
   "name": "linter-ruff",
-  "linter-package": true,
-  "main": "./lib/main",
-  "version": "1.1.1",
   "description": "A wrapper around Python linter called ruff",
-  "activationEvents": [],
-  "homepage": "https://github.com/bacadra/pulsar-linter-ruff",
-  "url": "https://github.com/bacadra/pulsar-linter-ruff",
   "repository": "https://github.com/bacadra/pulsar-linter-ruff",
   "keywords": [
-    "bacadra",
     "linter",
     "python",
     "ruff",
@@ -23,9 +16,18 @@
     "pylint",
     "numpy"
   ],
+  "version": "1.1.1",
+  "license": "MIT",
   "engines": {
     "atom": ">=1.100.0 <2.0.0"
   },
+  "main": "./lib/main",
+  "activationHooks": [
+    "language-python:grammar-used",
+    "MagicPython:grammar-used",
+    "django-atom:grammar-used",
+    "atom-django:grammar-used"
+  ],
   "providedServices": {
     "linter": {
       "versions": {
@@ -33,17 +35,8 @@
       }
     }
   },
-  "activationHooks": [
-    "language-python:grammar-used",
-    "MagicPython:grammar-used",
-    "django-atom:grammar-used",
-    "atom-django:grammar-used"
-  ],
   "dependencies": {
     "tmp": "^0.2.1"
   },
-  "devDependencies": {
-    "@types/tmp": "^0.2.1"
-  },
-  "license": "MIT"
+  "linter-package": true
 }
